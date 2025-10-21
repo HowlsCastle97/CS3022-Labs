@@ -8,5 +8,3 @@ How to run (Windows PowerShell):
 2. From PowerShell:
 
    perl .\fortune_escalator.pl
-
-If you prefer a helper script, run `run_fortune.ps1` which will check for `perl` and give a helpful message.
