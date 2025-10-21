@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Large installers
+*.msi
+
+# Node/plugin cruft
+VS Code Plugin/node_modules/
+VS Code Plugin/out/
+VS Code Plugin/.npm/
+VS Code Plugin/package-lock.json
