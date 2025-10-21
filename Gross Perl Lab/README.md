@@ -1,10 +1,20 @@
-Fortune Escalator
+### How to Run
+To run the Fortune Escalator program:
 
-This repository contains a small interactive Perl script `fortune_escalator.pl` that prints progressively darker/weirder fortunes.
+```bash
+# 1. Clone the repository
+git clone https://github.com/HowlsCastle97/CS3022-Labs.git
+cd "CS3022-Labs/Gross Perl Lab"
 
-How to run (Windows PowerShell):
+# 2. (Optional) Verify the syntax
+perl -c fortune_escalator.pl
+# Expected output:
+# fortune_escalator.pl syntax OK
 
-1. Install Strawberry Perl or ActivePerl if `perl` is not installed. Strawberry Perl: https://strawberryperl.com/
-2. From PowerShell:
+# 3. Run the program
+perl fortune_escalator.pl
 
-   perl .\fortune_escalator.pl
+# 4. (Optional) Use PowerShell launcher (Windows only)
+# If PowerShell blocks the script, temporarily allow execution
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\run_fortune.ps1
