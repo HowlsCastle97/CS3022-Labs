@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .message-box {
+            padding: 15px;
+            background-color: #e8e8e8;
+            border-left: 4px solid #555;
+            margin: 20px 0;
+        }
+        .content-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Page 2</h1>
+    
+    <div class="message-box">
+        <strong>Message from home page:</strong>
+        <p id="urlMessage">Loading...</p>
+    </div>
+
+    <div class="content-section">
+        <h2>About This Page</h2>
+        <p>This is the second page of the web server. The message above was passed from the main page through the URL.</p>
+        <p>This demonstrates how information can be passed between pages using URL parameters. Huzzah!</p>
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+
+    <script>
+        // Get message from URL
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const message = getUrlParameter('message');
+        if (message) {
+            document.getElementById('urlMessage').textContent = message;
+        } else {
+            document.getElementById('urlMessage').textContent = 'No message provided.';
+        }
+    </script>
+</body>
+</html>
