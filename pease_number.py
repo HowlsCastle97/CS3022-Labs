@@ -280,11 +280,6 @@ def make_collatz_with_closure():
     return collatz_closure
 
 
-# Example usage of closures:
-# fibo_from_closure = make_fibo_with_closure()
-# collatz_from_closure = make_collatz_with_closure()
-# print(fibo_from_closure(10))  # 55
-# print(collatz_from_closure(3))  # 7
 
 
 if __name__ == "__main__":
